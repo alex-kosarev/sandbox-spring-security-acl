@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sandbox_spring_security_acl
+    username: sandbox
+    password: sandbox
+  security:
+    user:
+      roles: ADMIN
+      password: '{noop}password'
+  cache:
+    cache-names:
+      - security/acl
